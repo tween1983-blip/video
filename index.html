@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Инструкция по генерации видео и подбору музыки</title>
+    <title>Генерация видео: Девочка у окна дачи</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,7 +36,7 @@
             border-left: 5px solid #3498db;
             padding: 15px;
             font-family: 'Courier New', Courier, monospace;
-            white-space: pre-wrap; /* Сохраняет переносы строк */
+            white-space: pre-wrap;
             margin: 10px 0;
             color: #444;
         }
@@ -51,11 +51,41 @@
             background-color: #fff8e1;
             border-left: 5px solid #f1c40f;
         }
+        
+        /* Стили для видео */
+        .video-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            background-color: #000;
+        }
+        .video-caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
     <h1>Генерация видео: Девочка у окна дачи</h1>
+
+    <!-- Секция с видео -->
+    <div class="card video-container">
+        <h2>🎬 Результат генерации</h2>
+        <!-- Убедитесь, что файл video.mp4 лежит рядом с этим HTML файлом -->
+        <video controls autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает встроенные видео.
+        </video>
+        <p class="video-caption">Сгенерировано с помощью Qwen (на основе промта из инструкции ниже)</p>
+    </div>
 
     <div class="card">
         <h2>📝 Исходный запрос</h2>
