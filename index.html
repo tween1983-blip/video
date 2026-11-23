@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по генерации видео и подбору музыки</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .prompt-box {
+            background-color: #f0f8ff;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap; /* Сохраняет переносы строк */
+            margin: 10px 0;
+            color: #444;
+        }
+        .tips-list li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .music-section {
+            background-color: #fff8e1;
+            border-left: 5px solid #f1c40f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Генерация видео: Девочка у окна дачи</h1>
+
+    <div class="card">
+        <h2>📝 Исходный запрос</h2>
+        <p><strong>Сюжет:</strong> Девочка славянской внешности (7 лет, блондинка с косой и синим бантом) стоит у окна дачного дома. Солнце светит в окно, занавески шевелятся от ветра. Девочка улыбается, держит хрустальную вазу с янтарно-желтыми тыквенными цукатами.</p>
+        <p><strong>Движение камеры:</strong> Медленный наезд на цукаты, затем отъезд обратно на девочку. В конце девочка берет цукат и кладет в рот.</p>
+    </div>
+
+    <div class="card">
+        <h2>💡 Советы для лучшей генерации</h2>
+        <ul class="tips-list">
+            <li><strong>Язык:</strong> Большинство нейросетей (Kling, Runway Gen-3, Luma Dream Machine, Sora, Pika) лучше понимают английский язык.</li>
+            <li><strong>Движение камеры:</strong> Если есть настройки, используйте <em>Zoom In</em> на первые 2-3 секунды, затем <em>Zoom Out</em>. Текстовое описание: "slow push-in followed by slow pull-back".</li>
+            <li><strong>Детализация еды:</strong> Используйте слова <span class="highlight">translucent amber-yellow</span> (полупрозрачные янтарно-желтые) и <span class="highlight">glowing</span> (сияющие), чтобы цукаты выглядели аппетитно и преломляли свет.</li>
+            <li><strong>Сложные действия:</strong> Анимация "еда" часто искажает пальцы. Если ИИ ошибается, попробуйте генерацию в два этапа или используйте инструменты Motion Brush / Keyframes.</li>
+            <li><strong>Соотношение сторон:</strong> Добавьте параметр <code>--ar 16:9</code> для кинематографичного эффекта.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🇬🇧 Промт на английском (Рекомендуется)</h2>
+        <p>Подходит для Kling, Runway, Luma.</p>
+        <div class="prompt-box">Cinematic, photorealistic video, 4k resolution. A 7-year-old Slavic girl with blonde hair in a single braid tied with a bright blue ribbon bow, standing by a cozy country house (dacha) window. Warm, bright sunlight streams through the window, creating volumetric lighting and illuminating sheer curtains that gently sway in a soft breeze. The girl has a warm, gentle smile. She holds a delicate crystal vase filled with glowing amber-yellow pumpkin candied fruits (tsukaty). Camera movement: a slow, smooth push-in (zoom in) focusing closely on the translucent amber-yellow candied fruits inside the crystal vase catching the sunlight, followed by a slow, smooth pull-back (zoom out) to reveal the girl's smiling face. As the camera pulls back, the girl gracefully picks up one candied fruit from the vase with her fingers and puts it into her mouth, continuing to smile. Highly detailed, natural lighting, cozy atmosphere, fluid motion, high fidelity.</div>
+    </div>
+
+    <div class="card">
+        <h2>🇷🇺 Промт на русском</h2>
+        <p>Подходит для Kandinsky Video, Шедеврум и других RU-моделей.</p>
+        <div class="prompt-box">Кинематографичное, фотореалистичное видео в 4K. 7-летняя девочка славянской внешности, блондинка с одной косой, перевязанной синим бантом, стоит у окна уютного дачного дома. Яркий, теплый солнечный свет проникает через окно, создавая объемное освещение и подсвечивая легкие занавески, которые слегка колышутся от мягкого ветра. Девочка тепло и искренне улыбается. Она держит в руках изящную хрустальную вазу, наполненную сияющими янтарно-желтыми тыквенными цукатами. Движение камеры: медленный, плавный наезд (приближение) на янтарно-желтые цукаты в хрустальной вазе, которые красиво блестят на солнце, затем медленный, плавный отъезд (отдаление) обратно к лицу девочки. В момент отдаления девочка грациозно берет один цукат из вазы пальцами и кладет его себе в рот, продолжая улыбаться. Высокая детализация, естественное освещение, уютная атмосфера, плавная и естественная анимация, высокая четкость.</div>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Оптимизация специально для Kling AI</h2>
+        <p>Kling AI (версии 1.5 и 1.6) отлично понимает физику материалов. Чтобы добиться эффекта полупрозрачности и свечения, используйте этот структурированный промт:</p>
+        <div class="prompt-box">Cinematic close-up, photorealistic 4k. Focus on translucent amber-yellow pumpkin candied fruits (tsukaty) inside a crystal vase. Sunlight streams through the window, making the candied fruits glow and refract light beautifully. Camera slowly pushes in on the glowing sweets, then pulls back to reveal a 7-year-old Slavic blonde girl with a blue ribbon in her braid. She smiles warmly. Soft breeze moves the sheer curtains. High fidelity, volumetric lighting, subsurface scattering on food.</div>
+    </div>
+
+    <div class="card music-section">
+        <h2>🎵 Подбор музыки</h2>
+        <p>Поскольку видео получилось светлым, теплым и уютным (стиль «cottagecore» или ностальгического детства), рекомендуются следующие жанры:</p>
+        <ol>
+            <li><strong>Нежное соло фортепиано:</strong> медленный, лиричный темп.</li>
+            <li><strong>Акустическая гитара:</strong> легкий перебор, фингерстайл.</li>
+            <li><strong>Светлый инди-фолк:</strong> без слов или с тихим напеванием.</li>
+            <li><strong>Эмбиент с природными звуками:</strong> легкое щебетание птиц, шелест листвы на фоне мягкого пианино.</li>
+        </ol>
+    </div>
+
+</body>
+</html>
